@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>PNG Images</h1>
+    <p>
+      3 separate PNG images for each bin (changes a class with javascript for
+      `click`, `mouseEnter` and `mouseLeave` of each picture
+    </p>
+    <div class="container">
+      <div class="binGreenBackground" id="binGreen"></div>
+      <div class="binYellowBackground" id="binYellow"></div>
+      <div class="binRedBackground" id="binRed"></div>
+    </div>
+
+    <div></div>
+
+    <h1>SVG Images</h1>
+    <p>
+      3 separate SVG images for each bin (changes a class with javascript for
+      `click`, `mouseEnter` and `mouseLeave` of each picture
+    </p>
+    <div class="container">
+      <div class="binGreenBackgroundSVG" id="binGreenSVG"></div>
+      <div class="binYellowBackgroundSVG" id="binYellowSVG"></div>
+      <div class="binRedBackgroundSVG" id="binRedSVG"></div>
+    </div>
+
+    <h1>SVG Images as Checkboxes Label Images</h1>
+    <p>
+      3 seperate images for each bin. static, css:hover and javascript. change
+      the url of the static svg image when picture is active
+    </p>
+    <div class="container">
+      <input type="checkbox" name="greenWasteBin" id="binGreenSVGBtn" /><label
+        for="binGreenSVGBtn"
+        id="greenWasteBinImage"
+      ></label>
+
+      <input type="checkbox" name="YellowWasteBin" id="binYellowSVGBtn" /><label
+        for="binYellowSVGBtn"
+        id="yellowWasteBinImage"
+      ></label>
+
+      <input type="checkbox" name="redWasteBin" id="binRedSVGBtn" /><label
+        for="binRedSVGBtn"
+        id="redWasteBinImage"
+      ></label>
+    </div>
+
+    <h1 id="h1">1 SVG source file, Changing the layers with javascript</h1>
+    <p></p>
+    <div class="container">
+      <div id="greenBinDiv">
+        <div id="greenOverlayDiv"></div>
+        <object
+          class="binSingleSVGTwo"
+          id="binGreenSingleSVG"
+          data="wheelieBin.svg"
+          type="image/svg+xml"
+        >
+          You're Browser Doesn't have support
+        </object>
+      </div>
+
+      <div id="yellowBinDiv">
+        <div id="yellowOverlayDiv"></div>
+        <object
+          class="binSingleSVG"
+          id="binYellowSingleSVG"
+          data="wheelieBin.svg"
+          type="image/svg+xml"
+          onclick="console.log(`click Yellow`)"
+        >
+          You're Browser Doesn't have support
+        </object>
+      </div>
+
+      <div id="redBinDiv">
+        <div id="redOverlayDiv"></div>
+        <object
+          class="binSingleSVG"
+          id="binRedSingleSVG"
+          data="wheelieBin.svg"
+          type="image/svg+xml"
+        >
+          You're Browser Doesn't have support
+        </object>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

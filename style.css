@@ -1,0 +1,297 @@
+body {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 900px;
+  margin-bottom: 20px;
+  border-bottom: black solid 5px;
+}
+
+/* PNG Images */
+#binGreen,
+#binYellow,
+#binRed {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.binGreenBackground {
+  background: url("\greenBin.png") no-repeat;
+  background-size: contain;
+}
+
+.binGreenHover {
+  background: url("\greenBin-hover.png") no-repeat;
+  background-size: contain;
+}
+
+.binGreenActive {
+  background: url("\greenBin-active.png") no-repeat;
+  background-size: contain;
+}
+
+.binYellowBackground {
+  background: url("\yellowBin.png") no-repeat;
+  background-size: contain;
+}
+
+.binYellowHover {
+  background: url("\yellowBin-hover.png") no-repeat;
+  background-size: contain;
+}
+
+.binYellowActive {
+  background: url("\yellowBin-active.png") no-repeat;
+  background-size: contain;
+}
+
+.binRedBackground {
+  background: url("\redBin.png") no-repeat;
+  background-size: contain;
+}
+
+.binRedHover {
+  background: url("\redBin-hover.png") no-repeat;
+  background-size: contain;
+}
+
+.binRedActive {
+  background: url("\redBin-active.png") no-repeat;
+  background-size: contain;
+}
+/* end of PNG images */
+
+/* seperate SVG images */
+#binGreenSVG,
+#binYellowSVG,
+#binRedSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.binGreenBackgroundSVG {
+  background: url("\wheelieBinGreen.svg") no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.binGreenHoverSVG {
+  background: url("\wheelieBinGReenHover.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binGreenActiveSVG {
+  background: url("\wheelieBinGreenActive.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binYellowBackgroundSVG {
+  background: url("\wheelieBinYellow.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binYellowHoverSVG {
+  background: url("\wheelieBinYellowHover.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binYellowActiveSVG {
+  background: url("\wheelieBinYellowActive.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binRedBackgroundSVG {
+  background: url("\wheelieBinRed.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binRedHoverSVG {
+  background: url("\wheelieBinRedHover.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.binRedActiveSVG {
+  background: url("\wheelieBinRedActive.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* seperate SVG images */
+#binGreenSVGBtn,
+#binYellowSVGBtn,
+#binRedSVGBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+#binGreenSVGBtn {
+  display: none;
+}
+#greenWasteBinImage {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url("\wheelieBinGreen.svg") no-repeat;
+  /* background: chartreuse; */
+  background-size: auto;
+  background-position: center;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+#greenWasteBinImage:hover {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url("\wheelieBinGreenHover.svg") no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#binYellowSVGBtn {
+  display: none;
+}
+#yellowWasteBinImage {
+  background: url("\wheelieBinYellow.svg") no-repeat;
+  background-position: center;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background-size: auto;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+#yellowWasteBinImage:hover {
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background: url("\wheelieBinYellowHover.svg") no-repeat;
+  background-size: auto;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+#binRedSVGBtn {
+  display: none;
+}
+
+#redWasteBinImage {
+  background: url("\wheelieBinRed.svg") no-repeat;
+  background-position: center;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background-size: auto;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+#redWasteBinImage:hover {
+  background: url("\wheelieBinRedHover.svg") no-repeat;
+  background-position: center;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background-size: auto;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.binRedActiveSVGBtn {
+  background: url("\wheelieBinRedActive.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+/* end SVG buttons */
+
+.binSingleSVGTwo {
+  /* background: data("\wheelieBinSingleColor.svg") no-repeat; */
+  background-position: center;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background-size: auto;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+.binSingleSVG {
+  /* background: url("\wheelieBinSingleColor.svg") no-repeat; */
+  background-position: center;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  background-size: auto;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+#greenBinDiv,
+#yellowBinDiv,
+#redBinDiv {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* background: black; */
+}
+
+#greenOverlayDiv,
+#yellowOverlayDiv,
+#redOverlayDiv {
+  height: 100%;
+  width: 100%;
+  background: blueviolet;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 50%;
+}
+#binYellowSingleSVGTow {
+  display: flex;
+}
+
+#binYellowSingleSVG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#binGreenSingleSVG,
+#binYellowSingleSVG,
+#binRedSingleSVG {
+  display: none;
+}
