@@ -270,7 +270,7 @@ body {
 #redOverlayDiv {
   height: 100%;
   width: 100%;
-  background: blueviolet;
+  /* background: blueviolet; */
   position: absolute;
   top: 0;
   left: 0;
@@ -294,4 +294,23 @@ body {
 #binYellowSingleSVG,
 #binRedSingleSVG {
   display: none;
+}
+
+/* test 5 */
+/* 3 svg source files, changing layors with jarascript */
+#greenBinSimpleDiv,
+#yellowBinSimpleDiv,
+#redBinSimpleDiv {
+  height: 100%;
+  width: 100%;
+}
+#greenBinSimpleSVG {
+  height: 100%;
+  width: 100%;
+  background: blueviolet;
+  display: ;
+}
+
+#yellowCircle {
+  display: block;
 }
