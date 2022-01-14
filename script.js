@@ -261,167 +261,166 @@ redBinBodyImage.addEventListener(`click`, function () {
   inlineYellwBinInitialization();
 });
 
-// //single SVG
+//single SVG
 
-// // //on window load
-// window.onload = function () {
+// //on window load
+window.onload = function () {
+  //get the green bin object, then the SVG document inside the Object tag, then the SVG items/layors by ID;
 
-//   //get the green bin object, then the SVG document inside the Object tag, then the SVG items/layors by ID;
+  //Green Bin
+  const greenObject = document.getElementById(`binGreenSingleSVG`);
+  const greenSVGDoc = greenObject.contentDocument;
+  //background cirles
+  //blue
+  const gBinCirleLayer = greenSVGDoc.getElementById(`backgroundCircleColour`);
+  //green
+  const gBinGreenCircle = greenSVGDoc.getElementById(`GreenCircle`);
+  const gBinBlueCircle = greenSVGDoc.getElementById(`BlueCircle`);
+  const gBinBlueTick = greenSVGDoc.getElementById(`Tick`);
 
-//   //Green Bin
-//   const greenObject = document.getElementById(`binGreenSingleSVG`);
-//   const greenSVGDoc = greenObject.contentDocument;
-//   //background cirles
-//   //blue
-//   const gBinCirleLayer = greenSVGDoc.getElementById(`backgroundCircleColour`);
-//   //green
-//   const gBinGreenCircle = greenSVGDoc.getElementById(`GreenCircle`);
-//   const gBinBlueCircle = greenSVGDoc.getElementById(`BlueCircle`);
-//   const gBinBlueTick = greenSVGDoc.getElementById(`Tick`);
+  //green bin initialization settings
+  const greenBinInitialization = function () {
+    //display none yellow and red circles
+    greenSVGDoc.getElementById(`RedCircle`).setAttribute("display", "none");
+    greenSVGDoc.getElementById(`YellowCircle`).setAttribute("display", "none");
+    gBinGreenCircle.style.display = "none";
+    gBinBlueTick.style.display = "none";
+    gBinBlueCircle.style.display = "none";
+    greenSVGDoc.getElementById(`yellowLid`).setAttribute("display", "none");
+    greenSVGDoc.getElementById(`redLid`).setAttribute("display", "none");
+  };
 
-//   //green bin initialization settings
-//   const greenBinInitialization = function () {
-//     //display none yellow and red circles
-//     greenSVGDoc.getElementById(`RedCircle`).setAttribute("display", "none");
-//     greenSVGDoc.getElementById(`YellowCircle`).setAttribute("display", "none");
-//     gBinGreenCircle.style.display = "none";
-//     gBinBlueTick.style.display = "none";
-//     gBinBlueCircle.style.display = "none";
-//     greenSVGDoc.getElementById(`yellowLid`).setAttribute("display", "none");
-//     greenSVGDoc.getElementById(`redLid`).setAttribute("display", "none");
-//   };
+  //yellow bin
+  const yellowObject = document.getElementById(`binYellowSingleSVG`);
+  const yellowSVGDoc = yellowObject.contentDocument;
+  //background cirles
+  //blue
+  const yBinCirleLayer = yellowSVGDoc.getElementById("backgroundCircleColour");
+  //yellow
+  const yBinYellowCircle = yellowSVGDoc.getElementById(`YellowCircle`);
+  const yBinBlueCircle = yellowSVGDoc.getElementById(`BlueCircle`);
+  const yBinBlueTick = yellowSVGDoc.getElementById(`Tick`);
 
-//   //yellow bin
-//   const yellowObject = document.getElementById(`binYellowSingleSVG`);
-//   const yellowSVGDoc = yellowObject.contentDocument;
-//   //background cirles
-//   //blue
-//   const yBinCirleLayer = yellowSVGDoc.getElementById("backgroundCircleColour");
-//   //yellow
-//   const yBinYellowCircle = yellowSVGDoc.getElementById(`YellowCircle`);
-//   const yBinBlueCircle = yellowSVGDoc.getElementById(`BlueCircle`);
-//   const yBinBlueTick = yellowSVGDoc.getElementById(`Tick`);
+  //yellow bin initialization settings
+  const yellowBinInitialization = function () {
+    //display none yellow and red circles
+    yellowSVGDoc.getElementById(`GreenCircle`).setAttribute("display", "none");
+    yellowSVGDoc.getElementById(`RedCircle`).setAttribute("display", "none");
+    yBinYellowCircle.style.display = "none";
+    yBinBlueTick.style.display = "none";
+    yBinBlueCircle.style.display = "none";
+    yellowSVGDoc.getElementById(`redLid`).setAttribute("display", "none");
+    yellowSVGDoc.getElementById(`greenLid`).setAttribute("display", "none");
+  };
 
-//   //yellow bin initialization settings
-//   const yellowBinInitialization = function () {
-//     //display none yellow and red circles
-//     yellowSVGDoc.getElementById(`GreenCircle`).setAttribute("display", "none");
-//     yellowSVGDoc.getElementById(`RedCircle`).setAttribute("display", "none");
-//     yBinYellowCircle.style.display = "none";
-//     yBinBlueTick.style.display = "none";
-//     yBinBlueCircle.style.display = "none";
-//     yellowSVGDoc.getElementById(`redLid`).setAttribute("display", "none");
-//     yellowSVGDoc.getElementById(`greenLid`).setAttribute("display", "none");
-//   };
+  //Red bin
+  const redObject = document.getElementById(`binRedSingleSVG`);
+  const redSVGDoc = redObject.contentDocument;
+  //background cirles
+  //blue
+  const rBinCirleLayer = redSVGDoc.getElementById(`backgroundCircleColour`);
+  //red
+  const rBinRedCircle = redSVGDoc.getElementById(`RedCircle`);
+  const rBinBlueCircle = redSVGDoc.getElementById(`BlueCircle`);
+  const rBinBlueTick = redSVGDoc.getElementById(`Tick`);
 
-//   //Red bin
-//   const redObject = document.getElementById(`binRedSingleSVG`);
-//   const redSVGDoc = redObject.contentDocument;
-//   //background cirles
-//   //blue
-//   const rBinCirleLayer = redSVGDoc.getElementById(`backgroundCircleColour`);
-//   //red
-//   const rBinRedCircle = redSVGDoc.getElementById(`RedCircle`);
-//   const rBinBlueCircle = redSVGDoc.getElementById(`BlueCircle`);
-//   const rBinBlueTick = redSVGDoc.getElementById(`Tick`);
+  //Red bin initialization settings
+  const redBinInitialization = function () {
+    //display none yellow and red circles
+    redSVGDoc.getElementById(`GreenCircle`).setAttribute("display", "none");
+    redSVGDoc.getElementById(`YellowCircle`).setAttribute("display", "none");
+    rBinRedCircle.style.display = "none";
+    rBinBlueTick.style.display = "none";
+    rBinBlueCircle.style.display = "none";
+    redSVGDoc.getElementById(`yellowLid`).setAttribute("display", "none");
+    redSVGDoc.getElementById(`greenLid`).setAttribute("display", "none");
+  };
+  greenBinInitialization();
+  yellowBinInitialization();
+  redBinInitialization();
 
-//   //Red bin initialization settings
-//   const redBinInitialization = function () {
-//     //display none yellow and red circles
-//     redSVGDoc.getElementById(`GreenCircle`).setAttribute("display", "none");
-//     redSVGDoc.getElementById(`YellowCircle`).setAttribute("display", "none");
-//     rBinRedCircle.style.display = "none";
-//     rBinBlueTick.style.display = "none";
-//     rBinBlueCircle.style.display = "none";
-//     redSVGDoc.getElementById(`yellowLid`).setAttribute("display", "none");
-//     redSVGDoc.getElementById(`greenLid`).setAttribute("display", "none");
-//   };
-//   greenBinInitialization();
-//   yellowBinInitialization();
-//   redBinInitialization();
+  //setting images to iline-block after initialization so the user doesn't see the changes
+  greenObject.style.display = "inline-block";
+  yellowObject.style.display = "inline-block";
+  redObject.style.display = "inline-block";
 
-//   //setting images to iline-block after initialization so the user doesn't see the changes
-//   greenObject.style.display = "inline-block";
-//   yellowObject.style.display = "inline-block";
-//   redObject.style.display = "inline-block";
+  //green Bin
+  document
+    .getElementById(`greenBinDiv`)
+    .addEventListener(`mouseenter`, function () {
+      if (gBinBlueCircle.style.display === "block") {
+        gBinGreenCircle.style.display = "none";
+      }
+      if (gBinBlueCircle.style.display === "none") {
+        gBinGreenCircle.style.display = "block";
+      }
+    });
+  document
+    .getElementById(`greenBinDiv`)
+    .addEventListener(`mouseleave`, function () {
+      gBinGreenCircle.style.display = "none";
+    });
+  document
+    .getElementById(`greenOverlayDiv`)
+    .addEventListener(`click`, function () {
+      gBinBlueTick.style.display = "block";
+      gBinBlueCircle.style.display = "block";
+      gBinGreenCircle.style.display = "none";
+      yellowBinInitialization();
+      redBinInitialization();
+    });
 
-//   //green Bin
-//   document
-//     .getElementById(`greenBinDiv`)
-//     .addEventListener(`mouseenter`, function () {
-//       if (gBinBlueCircle.style.display === "block") {
-//         gBinGreenCircle.style.display = "none";
-//       }
-//       if (gBinBlueCircle.style.display === "none") {
-//         gBinGreenCircle.style.display = "block";
-//       }
-//     });
-//   document
-//     .getElementById(`greenBinDiv`)
-//     .addEventListener(`mouseleave`, function () {
-//       gBinGreenCircle.style.display = "none";
-//     });
-//   document
-//     .getElementById(`greenOverlayDiv`)
-//     .addEventListener(`click`, function () {
-//       gBinBlueTick.style.display = "block";
-//       gBinBlueCircle.style.display = "block";
-//       gBinGreenCircle.style.display = "none";
-//       yellowBinInitialization();
-//       redBinInitialization();
-//     });
+  //Yellow
+  document
+    .getElementById(`yellowBinDiv`)
+    .addEventListener(`mouseenter`, function () {
+      if (yBinBlueCircle.style.display === "block") {
+        yBinYellowCircle.style.display = "none";
+      }
+      if (yBinBlueCircle.style.display === "none") {
+        yBinYellowCircle.style.display = "block";
+      }
+    });
 
-//   //Yellow
-//   document
-//     .getElementById(`yellowBinDiv`)
-//     .addEventListener(`mouseenter`, function () {
-//       if (yBinBlueCircle.style.display === "block") {
-//         yBinYellowCircle.style.display = "none";
-//       }
-//       if (yBinBlueCircle.style.display === "none") {
-//         yBinYellowCircle.style.display = "block";
-//       }
-//     });
+  document
+    .getElementById(`yellowBinDiv`)
+    .addEventListener(`mouseleave`, function () {
+      yBinYellowCircle.style.display = "none";
+    });
+  document
+    .getElementById(`yellowOverlayDiv`)
+    .addEventListener(`click`, function () {
+      yBinBlueTick.style.display = "block";
+      yBinBlueCircle.style.display = "block";
+      yBinYellowCircle.style.display = "none";
+      greenBinInitialization();
+      redBinInitialization();
+    });
 
-//   document
-//     .getElementById(`yellowBinDiv`)
-//     .addEventListener(`mouseleave`, function () {
-//       yBinYellowCircle.style.display = "none";
-//     });
-//   document
-//     .getElementById(`yellowOverlayDiv`)
-//     .addEventListener(`click`, function () {
-//       yBinBlueTick.style.display = "block";
-//       yBinBlueCircle.style.display = "block";
-//       yBinYellowCircle.style.display = "none";
-//       greenBinInitialization();
-//       redBinInitialization();
-//     });
+  //red
+  document
+    .getElementById(`redBinDiv`)
+    .addEventListener(`mouseenter`, function () {
+      if (rBinBlueCircle.style.display === "block") {
+        rBinRedCircle.style.display = "none";
+      }
+      if (rBinBlueCircle.style.display === "none") {
+        rBinRedCircle.style.display = "block";
+      }
+    });
 
-//   //red
-//   document
-//     .getElementById(`redBinDiv`)
-//     .addEventListener(`mouseenter`, function () {
-//       if (rBinBlueCircle.style.display === "block") {
-//         rBinRedCircle.style.display = "none";
-//       }
-//       if (rBinBlueCircle.style.display === "none") {
-//         rBinRedCircle.style.display = "block";
-//       }
-//     });
-
-//   document
-//     .getElementById(`redBinDiv`)
-//     .addEventListener(`mouseleave`, function () {
-//       rBinRedCircle.style.display = "none";
-//     });
-//   document
-//     .getElementById(`redOverlayDiv`)
-//     .addEventListener(`click`, function () {
-//       rBinBlueTick.style.display = "block";
-//       rBinBlueCircle.style.display = "block";
-//       rBinRedCircle.style.display = "none";
-//       greenBinInitialization();
-//       yellowBinInitialization();
-//     });
-// };
+  document
+    .getElementById(`redBinDiv`)
+    .addEventListener(`mouseleave`, function () {
+      rBinRedCircle.style.display = "none";
+    });
+  document
+    .getElementById(`redOverlayDiv`)
+    .addEventListener(`click`, function () {
+      rBinBlueTick.style.display = "block";
+      rBinBlueCircle.style.display = "block";
+      rBinRedCircle.style.display = "none";
+      greenBinInitialization();
+      yellowBinInitialization();
+    });
+};
